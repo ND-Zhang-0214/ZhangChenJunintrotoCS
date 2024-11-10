@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Today's Lab</title>
+</head>
+<body>
+
+<h1>Lab for September 8</h1>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <!-- Requirement #1: 三欄跨列 -->
+  <tr>
+    <th colspan="3">About -- 112501006</th>
+  </tr>
+  
+  <!-- Requirement #2: 三欄三列設置 -->
+  <tr>
+    <!-- 圖片和描述，跨三行 -->
+    <td rowspan="3" style="text-align: center;">
+      <img src="LAB1_Personal Photo.jpg" alt="personal photo" width="100"><br>
+      personal photo
+    </td>
+    <!-- 第二欄，第一行 -->
+    <td>Name: <input type="text" name="name"></td>
+    <td>
+      Gender: 
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other
+    </td>
+  </tr>
+  <tr>
+    <!-- 第二欄，第二行 -->
+    <td>City: 
+      <select name="City">
+        <option value="taipei">Taipei</option>
+        <option value="tainan">Tainan</option>
+        <option value="taichung">Taichung</option>
+        <option value="taoyuan">Taoyuan</option>
+      </select>
+    </td>
+    <!-- 第三欄，第二行 -->
+    <td>Birthday: <input type="date" name="birthday"></td>
+  </tr>
+  <tr>
+    <!-- 第二欄，第三行 -->
+    <td colspan="2">E-mail: <input type="email" name="email"></td>
+  </tr>
+  
+  <!-- Requirement #3: 二欄三列設置 -->
+  <tr>
+    <!-- 第一列，興趣 -->
+    <td>Hobby</td>
+    <td colspan="2">
+      <input type="checkbox" name="hobby" value="swimming"> Swimming
+      <input type="checkbox" name="hobby" value="volleyball"> Volleyball
+      <input type="checkbox" name="hobby" value="movie"> Movie
+      <input type="checkbox" name="hobby" value="game"> Game
+      <input type="checkbox" name="hobby" value="sleep"> Sleep
+    </td>
+  </tr>
+  <tr>
+    <!-- 第二列，技能 -->
+    <td>Skill</td>
+    <td colspan="2">
+      <input type="checkbox" name="skill" value="java"> Java
+      <input type="checkbox" name="skill" value="html"> HTML
+      <input type="checkbox" name="skill" value="python"> Python
+      <input type="checkbox" name="skill" value="office"> Microsoft Office
+      <input type="checkbox" name="skill" value="premiere"> Premiere
+    </td>
+  </tr>
+  <tr>
+    <!-- 第三列，留言 -->
+    <td>Say Something</td>
+    <td colspan="2">
+      <textarea name="message" placeholder="Say something here." style="width: 100%;"></textarea>
+    </td>
+  </tr>
+  
+  <!-- 提交與重設按鈕 -->
+  <tr>
+    <td colspan="3" style="text-align: left;">
+      <button type="submit">提交</button>
+      <button type="reset">重設</button>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
