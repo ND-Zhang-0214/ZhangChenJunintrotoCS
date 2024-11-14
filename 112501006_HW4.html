@@ -6,6 +6,8 @@
     <style>
         table {
             width: 100%;
+            max-width: 600px; /* 限制表格的最大寬度 */
+            margin: 0 auto; /* 表格置中 */
             border-collapse: collapse;
         }
         th, td {
@@ -19,6 +21,16 @@
         }
         h1 {
             text-align: center; /* 歡迎標題置中 */
+        }
+        .icon-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .icon-text img {
+            width: 60px; /* 調整圖標大小 */
+            height: auto;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -79,21 +91,36 @@
         <th colspan="4" style="background-color: #b3a2c7; text-align: center;">作品集</th>
     </tr>
     <tr>
-        <td>作業連結清單</td>
-        <td>
+        <td colspan="4">
+            <p><strong>作業連結清單</strong></p>
             <ul>
                 <li><a href="HW1.pdf">作業1 (PDF)</a></li>
                 <li><a href="HW2.xlsx">作業2 (Excel)</a></li>
                 <li><a href="HW3.xlsm">作業3 (Excel Macro)</a></li>
             </ul>
         </td>
-        <td>我的最愛音樂</td>
-        <td>
-            <ul>
-                <li>晴天</li>
-                <li>孤勇者</li>
-                <li>半島鐵盒</li>
-            </ul>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <p><strong>我的最愛音樂</strong></p>
+            <div class="icon-text">
+                <a href="https://open.spotify.com/album/7xRZJIwYJqOtv8CxNpy5A2" target="_blank">
+                    <img src="Spotify_Icon.png" alt="Spotify Logo">
+                </a>
+                <span>Night Changes</span>
+            </div>
+            <div class="icon-text">
+                <a href="https://open.spotify.com/track/11lwfW6hNssWtoiWz6no2Y" target="_blank">
+                    <img src="Spotify_Icon.png" alt="Spotify Logo">
+                </a>
+                <span>二十二</span>
+            </div>
+            <div class="icon-text">
+                <a href="https://open.spotify.com/track/0JnOpiUieuk9SdRv7Fkw2P" target="_blank">
+                    <img src="Spotify_Icon.png" alt="Spotify Logo">
+                </a>
+                <span>恋泥棒。</span>
+            </div>
         </td>
     </tr>
 
