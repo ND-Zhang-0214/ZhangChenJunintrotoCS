@@ -1,0 +1,106 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* 使用現代感字體 */
+    color: #4a4e69; /* 柔和深灰紫色文字 */
+    background-color: #fff4e6; /* 淺黃色背景 */
+}
+
+/* 標題區 */
+header {
+    background-color: #ffb5c1; /* 淡粉色背景 */
+    color: #4a4e69; /* 深紫灰文字 */
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive; /* 手寫風字體 */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+}
+
+/* 導覽列樣式 */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff8674; /* 粉橙色背景 */
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: white; /* 白色文字 */
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 5px; /* 圓角效果 */
+}
+
+.navbar a:hover {
+    background-color: #ffb3a7; /* 懸停效果：亮粉橙色 */
+}
+
+/* 下拉選單樣式 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffb5c1; /* 淡粉色 */
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffa8ac; /* 深粉懸停效果 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 主內容 */
+main {
+    padding: 2em;
+    font-size: 1.1em;
+}
+
+/* 左對齊段落 */
+.align-left {
+    text-align: left; /* 強制左對齊 */
+    margin: 1em 0;
+    padding-left: 2em;
+    color: #4a4e69; /* 深灰紫文字 */
+}
+
+main a {
+    color: #7a5195; /* 紫色文字 */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
