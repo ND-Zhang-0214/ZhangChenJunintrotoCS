@@ -1,0 +1,108 @@
+/* 全局樣式 */
+body {
+    color: #4a4e69; /* 深灰紫色文字 */
+    background-color: #fff4e6; /* 粉橘色背景 */
+    font-family: 'Poppins', sans-serif; /* 清新字體 */
+    margin: 0; /* 去除頁面邊緣空隙 */
+}
+
+/* 標題區 */
+header {
+    text-align: center;
+    background-color: #ffb5c1; /* 粉紅背景 */
+    color: #4a4e69;
+    padding: 2em 0; /* 增加上下內邊距 */
+    width: 100%; /* 填滿整個頁面寬度 */
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive; /* 手寫風字體 */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+/* 導覽列 */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* 均勻分布 */
+    align-items: center;
+    background-color: #ff8674; /* 橙粉色背景 */
+    padding: 1em 0; /* 增加內邊距以更清晰的顯示 */
+    width: 100%; /* 填滿整個頁面寬度 */
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffa8a1; /* 橙粉懸停效果 */
+}
+
+/* 下拉選單樣式 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffa8a1; /* 粉橘背景 */
+    min-width: 10em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffc1cc; /* 較亮粉色 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* 滑鼠懸停顯示下拉選單 */
+}
+
+/* 主內容文字 */
+.align-left {
+    text-align: left; /* 左對齊 */
+    line-height: 1.6;
+    margin: 1em auto;
+    max-width: 800px; /* 限制主內容寬度 */
+}
+
+/* 響應式設計 */
+@media all {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    .navbar {
+        display: none; /* 隱藏導航列 */
+    }
+}
