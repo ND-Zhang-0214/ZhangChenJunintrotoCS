@@ -1,0 +1,100 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    width: 900px;
+    height: 1150px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 左側面板 */
+.left-panel {
+    width: 330px;
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.photo-panel {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.nccu-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Email 白字設定 */
+.email-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* 右側面板 */
+
+.right-panel {
+    width: 570px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 將內容垂直分布 */
+    height: 100%; /* 填滿父容器 */
+}
+
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 5px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.homework-list a, .song-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.music-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-list div {
+    text-align: center;
+}
+
+.music-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+
+
+}
